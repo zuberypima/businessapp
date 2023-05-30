@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <title>HomePage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'tendertz/homepagestyle.css' %}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2426fea4b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="back-color">
+    <div class="menu-bar">
+
+        <ul class="navbar-one">
+            <p class="app-name">Tender TZ</p>
+            <div class="drop-div">
+                <li><a href="#home">Setup</a></li>
+                <div class="dropdown-content">
+                    <a href="#">Register as supplier</a>
+                    <a href="#">Registe Tender</a>
+                    <a href="manageclient.html">Manage Client</a>
+                    <a href="clientproperties.html">Manage Properties</a>
+                </div>
+            </div>
+            <div class="drop-div">
+                <li><a href="#home">Tenders</a></li>
+                <div class="dropdown-content">
+                    <a href="{% url 'tenders' %}">All Tenders</a>
+                    <a href="#">Opend to Bid Tenders</a>
+                    <a href="#">Awarded Tenders</a>
+                    <a href="#">Evaluated Tenders</a>
+                    <a href="#">Create New Tender</a>
+                </div>
+            </div>
+            <div class="drop-div">
+                <li><a href="#home">Accounts</a></li>
+                <div class="dropdown-content">
+                    <a href="bookingstoinvoice.html">View Booking to Invoice</a>
+                    <a href="#">Invoice Book</a>
+                    <a href="#">Reciept Book</a>
+                    <a href="#">Credit Notes</a>
+                </div>
+            </div>
+            <div class="drop-div">
+                <li><a href="#home">Tasks</a></li>
+                <div class="dropdown-content">
+                    <a href="#">Provision Booking</a>
+                    <a href="#">Due Payment</a>
+                    <a href="#">license</a>
+                    <a href="#">Room ror</a>
+                    <a href="#">Data Backupx</a>
+                </div>
+            </div>
+            <div class="drop-div">
+                <li><a href="#">Report</a></li>
+                <div class="dropdown-content">
+                    <a href="reportdatail.html">Daily</a>
+                    <a href="">Monthly</a>
+                    <a href="#">Yearly</a>
+                </div>
+            </div>
+        </ul>
+        <ul class="navbar-two">
+            <li><a href="#home">Dashboard_name</a></li>
+            <li><a href="#help">Help</a></li>
+            <li><a href="#user">User Name</a></li>
+        </ul>
+    </div>
+
+
+    <!--Bars to desplay detais of bookings-->
+    <div class="dash-container">
+        <!-- Sub Container one for Provisiona Bookings -->
+        <a href=" {% url 'tenders' %}">
+            <div class="sub-container-1">
+                <div class="min-container-1">
+                    <p>100</p>
+                    <p>Current Tenders</p>
+                </div>
+                <i class="fa-solid fa-person-circle-exclamation"></i>
+            </div>
+        </a>
+       
+        <!-- Sub Container one for Confirmed Bookings -->
+       <a href="{% url 'tenders' %}">
+        <div class="sub-container-2">
+            <div class="min-container-2">
+                <p>100</p>
+                <p>Awarded Tenders</p>
+            </div>
+            <i class="fa-solid fa-person-circle-check"></i>
+        </div>
+       </a>
+
+        <a href="{% url 'tenders' %}">
+            <div class="sub-container-2">
+                <div class="min-container-2">
+                    <p>100</p>
+                    <p>Open to Bid</p>
+                </div>
+                <i class="fa-solid fa-person-circle-check"></i>
+            </div>
+        </a>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.back-color {
+    background-image: url('images/hotel1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.menu-bar {
+    display: block;
+    height: 40px;
+    /* background-color: rgb(34, 100, 34); */
+    background-color: black;
+    padding-top: 10px;
+
+}
+
+.navbar-one {
+    display: inline-block;
+    padding-right: 440px;
+
+}
+
+.navbar-two {
+    display: inline-block;
+}
+
+li {
+    display: inline-flex;
+    padding: 15px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+.app-name {
+    display: inline;
+    font-size: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 165, 0);
+    padding-right: 20px;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.drop-div {
+    display: inline-block;
+    position: relative;
+    border: none;
+
+}
+
+.drop-div:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    min-width: 200px;
+    position: absolute;
+    background-color: white;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px; 
+    text-decoration: none;
+    display: block;
+    z-index: -1;
+    color: rgb(34, 32, 32);
+    font-weight: 500;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(34, 100, 34);
+    color: white;
+
+}
+
+/* Bars to desplay detais of bookings */
+.dash-container {
+    height: 300px;
+    margin-top: 40px;
+    padding-top: 30px;
+    /* border: 10px solid black; */
+    /* border-radius: 90px; */
+    /* background-color: grey; */
+    text-align: center;
+}
+
+/* Sub Container one for Provisiona Bookings  */
+.sub-container-1 {
+    display: inline-block;
+    width: 340px;
+    height: 100px;
+    background-color: #3cdfff;
+    text-align: center;
+    margin-right: 30px;
+    border: 1px solid  #3cdfff;
+    border-radius: 20px;
+
+}
+
+.min-container-1{
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    padding-right: 20px;
+    color: white;
+}
+.fa-solid{
+    font-size: 40px;
+    color: white;
+}
+/* Container for Confirmed Bookings */
+.sub-container-2 {
+    
+    display: inline-block;
+    width: 340px;
+    height: 100px;
+    background-color: #1b8000 ;
+    text-align: center;
+    margin-right: 30px;
+    border: 1px solid  #1b8000 ;
+    border-radius: 20px;
+
+}
+.min-container-2{
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    padding-right: 20px;
+    color: white;
+}
+

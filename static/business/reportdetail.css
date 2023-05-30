@@ -1,0 +1,48 @@
+
+
+.report-head {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+table,tr {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    height: 70px;
+    margin-left: 20px;
+}
+
+.variable {
+    font-size: 17px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+
+
+}
+.field-value{
+height: 25px;
+width: 250px;
+margin-right: 20px;
+border: 1px solid green;
+border-radius: 5px;
+margin-top: 5px;
+margin-bottom: 15px;
+}
+.button-row{
+    padding-left: 20px;
+    background-color: gray;
+    height: 40px;
+
+}
+.button-color{
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 6px;
+    width: 60px;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
+}

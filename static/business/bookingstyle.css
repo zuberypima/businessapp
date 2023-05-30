@@ -1,0 +1,125 @@
+
+.book-contain{
+    display: block;
+    background-color:gainsboro;
+    margin: auto;
+    width: 700px;
+    height: 500px;
+    border: 5px solid;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-left: 20px;
+    margin-top: 50px;
+    border-color: rgb(211, 211, 211); 
+}
+.form-contain {
+   border-bottom: 2px solid gray;
+   margin-bottom: 10px;
+}
+
+.form-contain p {
+    display: block;
+    padding-left: 10px;
+    height: 30px;
+
+
+}
+
+.input [type=text] {
+    border: 2px solid #555;
+    width: 50px;
+}
+
+label {
+    color: rgb(199, 39, 39);
+    font-size: 20px;
+}
+
+.book-field-one{
+    display:inline-block;
+    margin: auto;
+    width: 250px;
+    height: 30px;
+    outline-offset: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: green;
+    outline: none;
+    margin-left: 47px;
+}
+.book-field-two{
+    display:inline-block;
+    margin: auto;
+    width: 250px;
+    height: 30px;
+    outline-offset: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: green;
+    outline: none;
+    margin-left: 28px;
+}
+
+.book-lable{
+  display: inline-block;
+  font-size: 22px;
+  color: black;
+  
+}
+.field-contain{
+    padding-top: 20px;
+      
+    
+}
+.client{
+    display:inline-block;
+    margin: auto;
+    width: 250px;
+    height: 30px;
+    outline-offset: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: green;
+    outline: none;
+    margin-left: 45px;
+}
+
+.client-name{
+    display:inline-block;
+    margin: auto;
+    width: 250px;
+    height: 30px;
+    outline-offset: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: green;
+    outline: none;
+    margin-left: 49px;
+}
+.currency{
+    display:inline-block;
+    margin: auto;
+    width: 90px;
+    height: 30px;
+    outline-offset: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: green;
+    outline: none;
+    margin-left: 20px;
+}
+
+.button1{
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    color: white;
+    font-weight: 400;
+}

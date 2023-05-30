@@ -1,0 +1,110 @@
+.tittle-id {
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(37, 34, 34, 0.753);
+}
+
+.container-one {
+    background-color: rgba(157, 184, 201, 0.589);
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 50px;
+    padding-top: 40px;
+}
+
+.inside-div {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+.Property {
+    display: inline-flex;
+    margin: auto;
+    width: 250px;
+    height: 25px;
+    outline-offset: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: green;
+    outline: none;
+}
+
+.Weak-element {
+    display: inline-flex;
+    margin: auto;
+    width: 75px;
+    height: 25px;
+    outline-offset: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: green;
+    outline: none;
+}
+
+.Year-element {
+    display: inline-flex;
+    margin: auto;
+    width: 75px;
+    height: 25px;
+    outline-offset: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: green;
+    outline: none;
+}
+
+.client-element {
+    display: inline-flex;
+    margin: auto;
+    width: 300px;
+    height: 25px;
+    outline-offset: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: green;
+    outline: none;
+}
+
+.show-button {
+    background-color: blue;
+    border: 2px solid gray;
+    width: 70px;
+    height: 25px;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.table .th .td {
+    margin-left: 20px;
+
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(odd){
+    background-color: #dddddd;
+}
+.button-td{
+    
+}

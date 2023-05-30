@@ -1,0 +1,52 @@
+.login-box {
+    display: block;
+    background-color:gainsboro;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    border: 5px solid;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-left: 20px;
+    margin-top: 50px;
+    border-color: rgb(211, 211, 211);
+    
+}
+
+.app-name {
+    display: block;
+    width: 200px;
+    font-size: Arial;
+    font-size: 14px;
+    font-weight: 900;
+    padding-left: 70px;
+     
+}
+.login-field{
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 30px;
+    outline-offset: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: green;
+    outline: none;
+    
+}
+.login-button{
+   background-color:blue;
+   border: none;
+   color: white;
+   margin: auto;
+   width: 70px;
+   height: 30px;
+   margin: auto;
+   font-family: Arial;
+   font-weight: 600;
+   margin-left: 150px;
+   border-radius: 5px;
+   
+
+}

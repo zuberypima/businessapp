@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'tendertz/viewtender.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="booking-id">
+        <p>Order List</p>
+    </div>
+
+    {% comment %} <div class="container-one">
+        <div class="inside-div">
+            <label for="client" class="book-lable">Property:</label>
+            <select name="client" id="client" class="Property">
+                <option value="client-1">Client Group-1</option>
+                <option value="client-2">Client Group-2</option>
+                <option value="client-3">Client Group-3</option>
+                <option value="client-4">Client Group-4</option>
+            </select>
+        </div>
+        <div class="inside-div">
+            <label for="client" class="book-lable">Weak:</label>
+            <select name="client" id="client" class="Weak-element">
+                <option value="client-1">Weak-1</option>
+                <option value="client-2">Weak-2</option>
+                <option value="client-3">Weak-3</option>
+                <option value="client-4">Weak-4</option>
+            </select>
+        </div>
+        <div class="inside-div">
+            <label for="client" class="book-lable">Year:</label>
+            <select name="client" id="client" class="Year-element">
+                <option value="client-1">2019</option>
+                <option value="client-2">2020</option>
+                <option value="client-3">2021</option>
+                <option value="client-4">2022</option>
+            </select>
+        </div>
+        <div class="inside-div">
+            <label for="client" class="book-lable">Client:</label>
+            <select name="client" id="client" class="client-element">
+                <option value="client-1">Any</option>
+                <option value="client-2">Client Group-1</option>
+                <option value="client-3">Client Group-3</option>
+                <option value="client-4">Client Group-4</option>
+            </select>
+        </div>
+        <div class="inside-div"><button class="show-button">Show</button></div>
+           </div>
+        {% endcomment %}
+ 
+   {% comment %} <div class="status-contain">
+    <table >
+        <tr>
+            <td class="status-1">BBB</td>
+            <td class="status-txt">Open Tender</td>  
+        </tr>
+        <tr>
+            <td class="status-2">BBB</td>
+            <td class="status-txt">Awarded</td>
+        </tr>
+       <tr>
+        <td  class="status-3">BBB</td>
+        <td class="status-txt">Evaluation</td>
+       </tr>
+    </table>
+   </div> {% endcomment %}
+
+    <table>
+            <!-- <div class=" space-div"></div> -->
+            <tr >
+                <th>Order No</th>
+                <th>Client Name</th>
+                <th>Product Name</th>
+                <th>Quantinty</th>
+                <th>Payment Status</th>
+                <th>Amount Paid</th>
+                <th>Pending Amount</th>
+            </tr>
+           {% for order in orders  %}
+           <tr >
+            <td>{{order.orderNo}}</td>
+            <td>{{order.customer}}</td>
+            <td>{{order.product}}</td>
+            <td>{{order.quantity}}</td>
+            <td>{{order.paymentstatus}}</td>
+            <td>{{order.amountpaid}}</td>
+            <td>{{order.pendingamount}}</td>
+        </tr>
+           {% endfor %}
+    </table>
+
+
+    </div>
+</body>
+
+</html>
