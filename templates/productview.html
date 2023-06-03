@@ -20,9 +20,13 @@
           </div>
           <hr>
           <form action="">
-
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div><button>Make Oredr</button></div>
+            </form>
           </form>
-          <div><button>Make Oredr</button></div>
+          
     </div>
      
     </body>

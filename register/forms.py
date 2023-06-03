@@ -8,8 +8,8 @@ class OrderForm(forms.ModelForm):
      class Meta:
           model =Order 
           fields =['orderNo','product','quantity',
-                   'paymentstatus','amountpaid', 
-                   'pendingamount','transId']
+                   'amountpaid', 
+                   'transId']
           
 
 

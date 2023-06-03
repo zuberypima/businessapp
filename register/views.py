@@ -17,6 +17,11 @@ def order_list(request):
     orders =Order.objects.all()
     return render(request,'orderlist.html',{'orders':orders})
 
+def customerdash(request):
+    return render(request,'customerdash.html')
+
+
+
 def createOrder(request):
     if request.method =='POST':
        form =OrderForm(request.POST)
@@ -26,7 +31,7 @@ def createOrder(request):
            print('Succsessfully')
     else:
         form=OrderForm()
-    return render(request,'create_order.html', {'form': form} )
+    return render(request,'productview.html', {'form': form} )
 
 
 
@@ -52,3 +57,5 @@ def regproduct(request):
     else:
         form=ProductForm()
     return render(request,'registerproduct.html', {'form': form} )
+
+
