@@ -4,11 +4,11 @@ from administrator.models import BatchNumber
 
 
 class  Product(models.Model):
-    productId =models.CharField(max_length=255)
+    productId =models.AutoField(primary_key=True,default=0000)
     # productNo =models.AutoField(primary_key=True)
     name =models.CharField(max_length=255)
     stock =models.IntegerField()
-    expireDate =models.DateField()
+    # expireDate =models.DateField()
     # batchNumber =models.ForeignKey(BatchNumber,on_delete=models.DO_NOTHING)
     costPrice=models.FloatField()
     selingPrice =models.IntegerField()
@@ -16,6 +16,7 @@ class  Product(models.Model):
     def __str__(self):
         return self.name
     
+
 class Customer(models.Model):
     name =models.CharField(max_length=255)
     phoneNumber =models.CharField(max_length=255)

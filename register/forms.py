@@ -24,5 +24,5 @@ class TransactForm(forms.ModelForm):
 class ProductForm(forms.ModelForm):
      class Meta:
           model =Product 
-          fields =['productId','name','stock','expireDate',
+          fields =['productId','name','stock',
                    'costPrice','selingPrice',]
