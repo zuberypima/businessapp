@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{% static 'business/accountcss.css' %}" rel="stylesheet" />
+    <title>Customer</title>
+  </head>
+  <body>
+    <div class="div-main">
+      <!-- <div class="left-container"> -->
+      {% comment %}
+      <div class="side-div">
+        <ul>
+          <li>
+            <p>My Profile</p>
+          </li>
+          <hr />
+
+          <a href="{% url 'myorders' %}">
+            <li>
+              <p>My Order</p>
+            </li>
+          </a>
+          <hr />
+          <li>
+            <p>My Order</p>
+          </li>
+          <hr />
+          <li>
+            <p>My Order</p>
+          </li>
+          <hr />
+          <li>
+            <p>My Order</p>
+          </li>
+          <hr />
+          <li>
+            <p>My Order</p>
+          </li>
+          <hr />
+          <li>
+            <p>My Order</p>
+          </li>
+          <hr />
+        </ul>
+      </div>
+      {% endcomment %}
+      <!-- </div> -->
+      <div class="right-container">
+        <div class="grid-container">
+          <a href="{% url 'orders' %}">
+            <div class="grid-item">
+              <p>Orders</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="grid-item">
+              <p>Sold Products</p>
+            </div> </a
+          ><a href="">
+            <div class="grid-item">
+              <p>Transactions</p>
+            </div> </a
+          ><a href="{% url 'allproducts' %}">
+            <div class="grid-item">
+              <p>Products</p>
+            </div> </a
+          ><a href="">
+            <div class="grid-item">
+              <p>#####</p>
+            </div> </a
+          ><a href="">
+            <div class="grid-item">
+              <p>#####</p>
+            </div> </a
+          ><a href="">
+            <div class="grid-item">
+              <p>####</p>
+            </div> </a
+          ><a href="">
+            <div class="grid-item">
+              <p>#####</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function openPopup(url) {
+      window.open(url, "Popup", "width=600,height=600");
+    }
+  </script>
+</html>

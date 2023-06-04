@@ -4,8 +4,8 @@ from .forms import OrderForm,TransactForm,ProductForm
 # Create your views here.
 
 def product_list(request):
-    orders =Order.objects.all()
-    return render(request,'orderlist.html',{'orders':orders})
+    products =Product.objects.all()
+    return render(request,'productslist.html',{'products':products})
 
 
 def trans_list(request):
@@ -17,11 +17,27 @@ def order_list(request):
     orders =Order.objects.all()
     return render(request,'orderlist.html',{'orders':orders})
 
+def myorders(request):
+    orders =Order.objects.all()
+    return render(request,'customerorders.html',{'orders':orders})
+
 def customerdash(request):
     products =Product.objects.all()
     return render(request,'customerdash.html',{'products':products})
 
 
+def accountsdash(request):
+    products =Product.objects.all()
+    return render(request,'accountsdash.html',{'products':products})
+
+def servicedash(request):
+    products =Product.objects.all()
+    return render(request,'customerdash.html',{'products':products})
+
+
+def productview(request,pk):
+    product =Product.objects.get(productId=pk)
+    return render(request,'productview.html', {'product':product} )
 
 def createOrder(request):
     if request.method =='POST':

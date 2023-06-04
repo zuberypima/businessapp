@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'business/viewtender.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="booking-id">
+        <p>Products List</p>
+    </div>
+    <table>
+            <tr >
+                <th>Product No</th>
+                <th>Product Name</th>
+                <th>Stock Quantinty</th>
+                <th>Cost Price</th>
+                <th>Seling Price</th>
+                <th>Product Image</th>
+                <th>####</th>
+                <th>####</th>
+                <th></th>
+            </tr>
+           {% for product in products  %}
+           <tr >
+            <td>{{product.productId}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.stock}}</td>
+            <td>{{product.costPrice}}</td>
+            <td>{{product.selingPrice}}</td>
+            <td><img src="" alt=""></td>
+            <td>{{product.productId}}</td>
+            <td>{{product.productId}}</td>
+            <td><button>View</button></td>
+        </tr>
+           {% endfor %}
+    </table>
+
+
+    </div>
+</body>
+
+</html>

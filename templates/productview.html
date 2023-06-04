@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+    {% load static %}
     <head>
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/customercss.css" rel="stylesheet">
+        <link href="{% static 'business/customercss.css' %}" rel="stylesheet">
     </head>
     <body>
     <div class="product">
 
         <div class="product-image">
-            <img src="css/phon2.jfif" alt="">
+            <img src="{{product.image.url}}" alt="">
 
         </div>
         <hr>
         <div class="">
-            <p><span>Product:</span>Samsung</p>
-            <p><span>Price:</span>100000</p>
+            <p><span>Product:</span>{{product.name}}</p>
+            <p><span>Price:</span>{{product.selingPrice}}</p>
           </div>
           <hr>
-          <form action="">
+         <form action="">
             <form method="post">
                 {% csrf_token %}
                 {{ form.as_p }}
                 <div><button>Make Oredr</button></div>
             </form>
-          </form>
+          </form> 
           
     </div>
      

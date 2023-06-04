@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'business/viewtender.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="booking-id">
+        <p>My Orders</p>
+    </div>
+
+    
+
+    <table>
+            <!-- <div class=" space-div"></div> -->
+            <tr >
+                <th>Order No</th>
+                <th>Product Name</th>
+                <th>Quantinty</th>
+                <th>Payment Status</th>
+                <th>Amount Paid</th>
+                <th>Pending Amount</th>
+                <th>Transction ID</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+           {% for order in orders  %}
+           <tr >
+            <td>{{order.orderNo}}</td>
+            <td>{{order.product}}</td>
+            <td>{{order.quantity}}</td>
+            <td>{{order.paymentstatus}}</td>
+            <td>{{order.amountpaid}}</td>
+            <td>{{order.pendingamount}}</td>
+            <td>{{order.transId}}</td>
+            <td>{{order.orderstatus}}</td>
+            <td><button>View</button></td>
+        </tr>
+           {% endfor %}
+    </table>
+
+
+    </div>
+</body>
+
+</html>

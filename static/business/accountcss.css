@@ -32,13 +32,13 @@ html body{
 }
 
 .right-container{
-    width: 80%;
+    width: 100%;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     height: 100%;
-    position: absolute;
-    left: 20%;
+    /* position: absolute; */
+    /* left: 20%; */
 }
 
 .grid-container {
@@ -49,12 +49,22 @@ html body{
   }
   
 .grid-item {
-    background-color:white;
+    background-color: rgb(0, 153, 255);
     border-radius: 10px;
     padding: 10px;
-    height: 230px;
-    width: 150px;
+    height: 90px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 700;
   }
+
+a{
+    text-decoration: none;
+}
 
 .brand-tag{
     display: flex;
@@ -81,28 +91,4 @@ html body{
     border-radius: 10px;
     color: white;
     width: 130px;
-}
-
-
-.product{
-   
-    /* width: 50%; */
-    /* height: 60%; */
-    /* left: 25%; */
-    /* top: 20%; */
-    /* position:absolute; */
-    /* border-radius: 10px; */
-    padding-left: 20px;
-
-}
-
-.product img{
-    border: 2px solid grey;
-    left: 10%;
-    /* position: absolute; */
-    height: 220px;
-    padding-top: 10px;
-    border-radius: 10px;
-
-
 }

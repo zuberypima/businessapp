@@ -4,7 +4,7 @@ from administrator.models import BatchNumber
 
 
 class  Product(models.Model):
-    productId =models.AutoField(primary_key=True,default=0000)
+    productId =models.AutoField(primary_key=True,)
     # productNo =models.AutoField(primary_key=True)
     name =models.CharField(max_length=255)
     stock =models.IntegerField()
