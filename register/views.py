@@ -18,7 +18,8 @@ def order_list(request):
     return render(request,'orderlist.html',{'orders':orders})
 
 def customerdash(request):
-    return render(request,'customerdash.html')
+    products =Product.objects.all()
+    return render(request,'customerdash.html',{'products':products})
 
 
 

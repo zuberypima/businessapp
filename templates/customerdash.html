@@ -46,10 +46,11 @@
       <!-- </div> -->
       <div class="right-container">
         <div class="grid-container">
+          {% for product in products %}
           <div class="grid-item">
             <div class="">
               <img
-                src="css/phon2.jfif"
+                src="{{product.image.url}}"
                 alt="Description of the image"
                 width="130"
                 height="120"
@@ -57,139 +58,16 @@
               />
               <div class="product-details">
                 <div>
-                  <p><span>Brand: </span>Samsung</p>
+                  <p><span>Brand: </span>{{product.name}}</p>
                 </div>
                 <div>
-                  <p><span>Price: </span>100000</p>
-                </div>
-                <div>
-                 <a href="productview.html">
-                  <button>View</button>
-                 </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="">
-              <img
-                src="css/phon2.jfif"
-                alt="Description of the image"
-                width="130"
-                height="120"
-                title="Image title"
-              />
-              <div class="product-details">
-                <div>
-                  <p><span>Brand: </span>Samsung</p>
-                </div>
-                <div>
-                  <p><span>Price: </span>100000</p>
+                  <p><span>Price: </span>{{product.selingPrice}}</p>
                 </div>
                 <div><button onclick="openPopup()">View</button></div>
               </div>
             </div>
           </div>
-          <div class="grid-item">
-            <div class="">
-              <img
-                src="css/phon2.jfif"
-                alt="Description of the image"
-                width="130"
-                height="120"
-                title="Image title"
-              />
-              <div class="product-details">
-                <div>
-                  <p><span>Brand: </span>Samsung</p>
-                </div>
-                <div>
-                  <p><span>Price: </span>100000</p>
-                </div>
-                <div><button>View</button></div>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="">
-              <img
-                src="css/phon2.jfif"
-                alt="Description of the image"
-                width="130"
-                height="120"
-                title="Image title"
-              />
-              <div class="product-details">
-                <div>
-                  <p><span>Brand: </span>Samsung</p>
-                </div>
-                <div>
-                  <p><span>Price: </span>100000</p>
-                </div>
-                <div><button>View</button></div>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="">
-              <img
-                src="css/phon2.jfif"
-                alt="Description of the image"
-                width="130"
-                height="120"
-                title="Image title"
-              />
-              <div class="product-details">
-                <div>
-                  <p><span>Brand: </span>Samsung</p>
-                </div>
-                <div>
-                  <p><span>Price: </span>100000</p>
-                </div>
-                <div><button>View</button></div>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="">
-              <img
-                src="css/phon2.jfif"
-                alt="Description of the image"
-                width="130"
-                height="120"
-                title="Image title"
-              />
-              <div class="product-details">
-                <div>
-                  <p><span>Brand: </span>Samsung</p>
-                </div>
-                <div>
-                  <p><span>Price: </span>100000</p>
-                </div>
-                <div><button>View</button></div>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="">
-              <img
-                src="css/phon2.jfif"
-                alt="Description of the image"
-                width="130"
-                height="120"
-                title="Image title"
-              />
-              <div class="product-details">
-                <div>
-                  <p><span>Brand: </span>Samsung</p>
-                </div>
-                <div>
-                  <p><span>Price: </span>100000</p>
-                </div>
-                <div><button>View</button></div>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>

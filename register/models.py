@@ -4,13 +4,15 @@ from administrator.models import BatchNumber
 
 
 class  Product(models.Model):
-    productId =models.CharField(max_length=255,unique=True)
+    productId =models.CharField(max_length=255)
+    # productNo =models.AutoField(primary_key=True)
     name =models.CharField(max_length=255)
     stock =models.IntegerField()
     expireDate =models.DateField()
     # batchNumber =models.ForeignKey(BatchNumber,on_delete=models.DO_NOTHING)
     costPrice=models.FloatField()
     selingPrice =models.IntegerField()
+    image  =models.ImageField(upload_to='upload/',blank=True,null=True)
     def __str__(self):
         return self.name
     

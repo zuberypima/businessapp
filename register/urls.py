@@ -1,4 +1,7 @@
+import statistics
 from django.urls import path
+from django.conf.urls.static import static
+from core import settings
 from .views import product_list,createOrder,recodtrans,regproduct,order_list,trans_list,customerdash
 
 
@@ -11,6 +14,7 @@ urlpatterns = [
     path('registerproduct/',regproduct,name='registerproduct'),
     path('customer',customerdash,name='customer'),
     path('productview',createOrder,name='productview')
-]
+] 
+# + statistics(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
